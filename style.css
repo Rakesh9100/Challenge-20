@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "K2D", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --main1: #111122;
+  --main2: #1d1d1d;
+  --primary: #fff031;
+  --secondary: #fff5f5;
+  --hover: #3DCFD3;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.5rem;
+}
+section .title span {
+  color: var(--secondary);
+  font-size: 3.6rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+section .title span::before,
+section .title span::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 100%;
+  background: var(--primary);
+  left: 0;
+  bottom: 0;
+}
+section .title span::after {
+  bottom: -0.7rem;
+  width: 70%;
+  left: 5rem;
+  transform: translate(-50%);
+}
+
+
+
+
+.contact {
+  background: var(--main2);
+  padding-top: 11rem;
+  padding-bottom: 6.4rem;
+  padding-left: 27rem;
+  padding-right: 27rem;
+}
+.contact .card-wrapper {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5rem 4rem 7rem 5rem;
+  border-radius: 5rem;
+}
+.contact .left {
+  margin-right: 10rem;
+}
+.contact .left img {
+  transform: scale(1.18);
+  margin-top: -5rem;
+  -webkit-user-drag: none;
+  margin-left: -5rem;
+}
+.contact .right input {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 35rem;
+  box-sizing: border-box;
+  border: solid var(--primary);
+  border-radius: 1rem;
+}
+.contact .right textarea {
+  width: 35rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: solid var(--primary);
+  border-radius: 0.5rem;
+}
+.send-btn {
+  display: flex;
+  text-align: center;
+  margin-left: 8.6rem;
+  margin-top: 3.2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 0.2rem solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: var(--hover);
+  color: var(--main1);
+  border-color: var(--primary);
+  border-radius: 1rem;
+  transition: all .3s ease;
+  
+}
+.send-btn:hover {
+  background: transparent;
+  border-color: var(--hover);
+  color: var(--hover);
+}
